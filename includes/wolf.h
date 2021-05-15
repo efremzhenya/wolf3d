@@ -89,7 +89,7 @@ void	for_keys(t_w *w, const uint8_t *keys, SDL_Event event);
 void	init_cam(t_w *w);
 void	load_textures(t_w *w);
 void	draw_wall(t_w *w, int x, int start, int end);
-void	draw_floor(t_w *w, int x, int start, int end);
+void	draw_floor(t_w *w, int x, int end);
 void	draw_sky(t_w *w);
 void	put_pixel(SDL_Surface *surf, const int x, const int y,
 			const int color);
