@@ -188,7 +188,7 @@ void ft_ray_cast(t_w *w)
 		if (end > HEIGHT - 1)
 			end = HEIGHT - 1;
 		draw_wall(w, x, start, end);
-		draw_floor(w, x, start, end);
+		draw_floor(w, x, end);
 		x++;
 		//printf("x%d\n",x);
 	}

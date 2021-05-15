@@ -74,15 +74,15 @@ typedef struct s_w
 	SDL_Surface		*s4;
 	SDL_Surface		*s5;
 	SDL_Surface		*s6;
-	SDL_Surface 	*floor;
-	SDL_Surface     *floor1;
-	SDL_Surface     *floor2;
-	SDL_Surface 	*sky;
-	double floor_x;
-	double floor_y;
-	double wall_x;
+	SDL_Surface		*floor;
+	SDL_Surface		*floor1;
+	SDL_Surface		*floor2;
+	SDL_Surface		*sky;
+	double			floor_x;
+	double			floor_y;
+	double			wall_x;
 
-}				t_w;
+}					t_w;
 
 void	ft_usage(int a);
 int		ft_read_wolf(char *argv, t_w *w);
@@ -98,4 +98,6 @@ void	put_pixel(SDL_Surface *surf, const int x, const int y,
 			const int color);
 Uint32	read_pixel(SDL_Surface *surface, const int x, const int y);
 void	ft_put_error(char *s);
+void	up(t_w *w);
+void	down(t_w *w);
 #endif
