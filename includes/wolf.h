@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   wolf.h                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lseema <lseema@student.21-school.ru>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/05/15 21:00:53 by lseema            #+#    #+#             */
+/*   Updated: 2021/05/15 21:00:54 by lseema           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef WOLF_H
 # define WOLF_H
 # include <unistd.h>
@@ -88,7 +100,7 @@ void	ft_usage(int a);
 int		ft_read_wolf(char *argv, t_w *w);
 void	ft_ray_cast(t_w *w);
 void	loop_for_image(t_w *w);
-void	for_keys(t_w *w, const uint8_t *keys, SDL_Event event);
+void	for_keys(t_w *w, const uint8_t *keys);
 void	init_cam(t_w *w);
 void	load_textures(t_w *w);
 void	draw_wall(t_w *w, int x, int start, int end);

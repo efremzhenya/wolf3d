@@ -6,7 +6,7 @@
 /*   By: lseema <lseema@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/26 17:19:21 by ilmira            #+#    #+#             */
-/*   Updated: 2021/05/15 19:12:38 by lseema           ###   ########.fr       */
+/*   Updated: 2021/05/15 20:59:12 by lseema           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	rotate_cam(t_w *w, const uint8_t *keys)
 	}
 }
 
-void	for_keys(t_w *w, const uint8_t *keys, SDL_Event event)
+void	for_keys(t_w *w, const uint8_t *keys)
 {
 	rotate_cam(w, keys);
 	ft_ray_cast(w);
